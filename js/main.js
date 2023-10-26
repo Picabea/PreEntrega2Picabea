@@ -1,4 +1,3 @@
-let adivinado = false
 let adivinanza = null
 let intentos = 0
 let game_status = true
