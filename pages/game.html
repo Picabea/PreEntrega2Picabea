@@ -5,46 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
 </head>
 
-<header>
-    <div>
-        <a href="../index.html"><button>Inicio</button></a>
-        <button>Jugar</button>
-        <a href="historial.html"><button>Historial</button></a>
-    </div>
-    <div>
-        <button>Sobre Nosotros</button>
-    </div>
-</header>
+
 
 <body>
-    <h1>Adivina el Numero!</h1>
 
-    <h2>(Panel para ingresar el numero)</h2>
-    <div>(panel numerico para poder ingresar los numeros)</div>
+    <header>
+        <div>
+            <a href="../index.html"><button>Inicio</button></a>
+            <button>Jugar</button>
+            <a href="historial.html"><button>Historial</button></a>
+        </div>
+        <div>
+            <button>Sobre Nosotros</button>
+        </div>
+    </header>
 
-    <p>Intento 1 y resultado (mayor o menor)</p>
-    <p>Intento 2 y resultado (mayor o menor)</p>
-    <p>Intento 3 y resultado (mayor o menor)</p>
-    <p>Intento 4 y resultado (mayor o menor)</p>
-    <p>Intento 5 y resultado (mayor o menor)</p>
-    <p>Intento 6 y resultado (mayor o menor)</p>
-    <p>Intento 7 y resultado (mayor o menor)</p>
-    <p>Intento 8 y resultado (mayor o menor)</p>
-    <p>Intento 9 y resultado (mayor o menor)</p>
-    <p>Intento 10 y resultado (mayor o menor)</p>
+    <h1>Adivina el Número!</h1>
+    <div id="divDificultadJuego">
+        <h2>Seleccione la dificultad:</h2>
+        <select name="selectDificultad" id="selectDificultad">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+        </select>
+    </div>
+    <div id="divInput">
+        <h2>Ingrese su acierto:</h2>
+        <input type="number" id="inputNumeros" min="1" max="100">
+    </div>
+
+    <!-- <form action="" id="formularioNumeros"> -->
+    
+        <!-- <button id="botonNumeros">Comprobar</button> -->
+    <!-- </form> -->
+
+    <!-- <div>(panel numerico para poder ingresar los numeros)</div> -->
+    <section id="sectionIntentos">
+
+    </section>
+
+    <button id="buttonNewGame">Nuevo Juego</button>
+
+    <footer>
+        <div>
+            <a><img src="../images/bugIcon.png" alt="Enviar errores"></a>
+        </div>
+        <div>
+            <a><img src="../images/instagramLogo.png" alt=""></a>
+            <a><img src="../images/iconEmail.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="../js/game.js"></script>
 </body>
 
-<footer>
-    <div>
-        <button><img src="../images/bugIcon.png" alt="Enviar errores"></button>
-    </div>
-    <div>
-        <button><img src="../images/Instagram_logo_2016.svg.webp" alt=""></button>
-        <button><img src="../images/iconEmail.png" alt=""></button>
-    </div>
 
-</footer>
 
 </html>

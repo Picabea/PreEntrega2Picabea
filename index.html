@@ -5,37 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivina el numero</title>
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
 </head>
-<header>
-    <div>
-        <a><button>Inicio</button></a>
-        <a href="pages/game.html"><button>Jugar</button></a>
-        <a href="pages/historial.html"><button>Historial</button></a>
-    </div>
-    <div>
-        <button>Sobre Nosotros</button>
-    </div>
-</header>
+
 
 <body>
+
+    <header>
+        <div>
+            <a><button>Inicio</button></a>
+            <a href="pages/game.html"><button>Jugar</button></a>
+            <a href="pages/historial.html"><button>Historial</button></a>
+        </div>
+        <div>
+            <button>Sobre Nosotros</button>
+        </div>
+    </header>
+    
     <h1>Bienvenido a Adivina el Numero!</h1>
-    <h3>Reglas</h3>
-    <p>
-        Deberas ingresar un numero e intentar acertar el numero elegido aleatoriamente por el sistema. Tras ingresar un numero te dire si es mayor o menor que el que debes adivinar. Suerte!
-    </p>
+    
+    <section id="sectionReglas">
+        <h2>Reglas</h2>
+        <p>
+            El objetivo del juego es adivinar el numero elegido aleatoriamente por el sistema. Tras ingresar un numero se mostrara:
+        </p>
+        <div>
+            <img src="images/flechaArriba.png" alt="">
+            <p>Si el numero que ingresaste es menor</p>
+        </div>
+        <div>
+            <img src="images/flechaAbajo.png" alt="">
+            <p>Si el numero que ingresaste es mayor</p>
+        </div>
+        <div>
+            <img src="images/trofeo.png" alt="">
+            <p>Si adivinaste el numero</p>
+        </div>
+    </section>
+    
+
+    <h2>Ejemplo</h2>
+    <section id="sectionEjemplo">
+        <div class="divIntento">
+            <h3>Intento número 1:</h3>
+            <div>
+                <p>20</p>
+                <img src="images/flechaAbajo.png" class="imgIntento">
+            </div>
+        </div>
+        <div class="divIntento">
+            <h3>Intento número 2:</h3>
+            <div>
+                <p>15</p>
+                <img src="images/flechaArriba.png" class="imgIntento">
+            </div>
+        </div>
+        <div class="divIntento">
+            <h3>Intento número 3:</h3>
+            <div>
+                <p>18</p>
+                <img src="images/flechaArriba.png" class="imgIntento">
+            </div>
+        </div>
+        <div class="divIntento">
+            <h3>Intento número 4:</h3>
+            <div>
+                <p>19</p>
+                <img src="images/trofeo.png" class="imgIntento">
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div>
+            <a href=""><img src="images/bugIcon.png" alt="Enviar errores"></a>
+        </div>
+        <div>
+            <a href=""><img src="images/instagramLogo.png" alt=""></a>
+            <a href=""><img src="images/iconEmail.png" alt=""></a>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
-    <h3>Ejemplo</h3>
-    <p>(ejemplo)</p>
 </body>
 
-<footer>
-    <div>
-        <button><img src="images/bugIcon.png" alt="Enviar errores"></button>
-    </div>
-    <div>
-        <button><img src="images/Instagram_logo_2016.svg.webp" alt=""></button>
-        <button><img src="images/iconEmail.png" alt=""></button>
-    </div>
 
-</footer>
 </html>

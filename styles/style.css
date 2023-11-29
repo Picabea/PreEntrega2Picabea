@@ -1,24 +1,157 @@
+*{
+    font-family: montserrat;
+}
+
+html{
+    width: 600px;
+    margin: auto;
+    height: 100%;
+}
+
+
 header{
+    position: sticky;
+    top:0%;
     display: flex;
     justify-content: space-between;
     align-items: space-between;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(232, 244, 255);
+}
+
+header button{
+    border: solid 3px rgb(126, 158, 228);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(90, 131, 219)
+}
+
+header div{
+    margin: 5px;
+}
+
+header button:hover{
+    background-color: rgb(126, 158, 228);
+    color: white;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(232, 244, 255);
 }
 
 footer{
+    position: sticky;
+    bottom: 0;
+    width: 600px;
+    top: 93%;
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-    height: 50px
+    height: 50px;
+    background-color: rgb(232, 244, 255);
+    margin-top: 20px;
 }
-footer button{
+footer a{
     height: 90%;
     width: 50px;
 }
 
-footer button img{
+footer a img{
     height: 100%;
 }
 
-#div_filtro{
+#divFiltro{
     display: flex;
+    flex-direction: column;
+}
+
+#divFiltro div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#divFiltro div select{
+    width: 80px;
+    height: 40px;
+}
+
+.imgIntento{
+    width: 100px;
+    background-color: rgb(232, 244, 255);
+}
+
+h1{
+    font-family: montserrat;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+#divDificultadJuego, #divInput{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#divDificultadJuego img{
+    width: 50px;
+    height: 50px;
+}
+
+select{
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    width: 40px;
+}
+
+select:hover{
+    border: 1px solid #000000;
+}
+
+
+
+#sectionIntentos img, #sectionEjemplo img{
+    height: 50px;
+    width: 50px;
+}
+
+.divIntento{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divIntento div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#buttonNewGame{
+    background-color: rgb(126, 158, 228);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#buttonNewGame:hover{
+    background-color: rgb(78, 128, 236);
+}
+
+#sectionReglas div{
+    display: flex;
+
+}
+#sectionReglas img{
+    width: 50px;
+    height: 50px;
 }
