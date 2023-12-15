@@ -1,0 +1,10 @@
+{
+    "url": "https://www.random.org/integers/",
+    "key": "DrK2ud+v5M3WLNQh+GpJV0kXJBIg2iMMxn07xNq17HxtjkkoAZf0owk+CnxdhZaZRdME6MQha8/OFGMISq5lAQ==",
+    "min": 1,
+    "max": 100,
+    "col": 1,
+    "base": 10,
+    "format": "plain",
+    "rnd": "new"
+}
