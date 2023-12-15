@@ -36,14 +36,18 @@ function actualizarFiltroResultado(evento){
 
 function mostrarJuegos(){
     historialFiltrado = historial.filter(filtrarResultado).filter(filtrarDificultad)
-
-    for (juego of historialFiltrado){
-        sectionHistorial.innerHTML = sectionHistorial.innerHTML + `
-        <h3>Partida con el id ${juego.id}</h3>
-        <p>El juego fue ${juego.resultado} en ${juego.intentos} intento(s) y la dificultad era ${juego.dificultad}</p>
-        <p>Los numeros ingresados fueron: ${juego.numerosIngresados.join(" - ")} </p>
-        `
+    if(!historialFiltrado.length == 0){
+        for (juego of historialFiltrado){
+            sectionHistorial.innerHTML = sectionHistorial.innerHTML + `
+            <h3>Partida con el id ${juego.id}</h3>
+            <p>El juego fue ${juego.resultado} en ${juego.intentos} intento(s) y la dificultad era ${juego.dificultad}</p>
+            <p>Los numeros ingresados fueron: ${juego.numerosIngresados.join(" - ")} </p>
+            `
+        }
+    }else{
+        sectionHistorial.innerHTML = "<b>No hay partidas para mostrar</b>"
     }
+    
 }
 
 function filtrarResultado(partida){
