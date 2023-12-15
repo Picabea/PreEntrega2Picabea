@@ -36,7 +36,6 @@ function actualizarFiltroResultado(evento){
 
 function mostrarJuegos(){
     historialFiltrado = historial.filter(filtrarResultado).filter(filtrarDificultad)
-    console.log(historialFiltrado)
 
     for (juego of historialFiltrado){
         sectionHistorial.innerHTML = sectionHistorial.innerHTML + `
@@ -62,6 +61,5 @@ function filtrarDificultad(partida){
 }
 
 function limpiarHistorialMostrado(){
-    console.log("Historial limpio")
     sectionHistorial.innerHTML = ""
 }
