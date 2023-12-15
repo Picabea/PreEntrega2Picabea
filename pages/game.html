@@ -12,46 +12,46 @@
 
 </head>
 
-
-
 <body>
-
     <header>
-        <div>
-            <a href="../index.html"><button>Inicio</button></a>
-            <button>Jugar</button>
-            <a href="historial.html"><button>Historial</button></a>
-        </div>
-        <div>
-            <button>Sobre Nosotros</button>
-        </div>
+        <nav>
+            <div>
+                <a href="../index.html"><button>Inicio</button></a>
+                <button>Jugar</button>
+                <a href="historial.html"><button>Historial</button></a>
+            </div>
+            <div>
+                <button>Sobre Nosotros</button>
+            </div>
+        </nav>
     </header>
+    <main>
+        <h1>Adivina el Número!</h1>
+        <img src="../images/helpIcon.png" alt="icono ayuda" id="helpButton">
+        <div id="divDificultadJuego">
+            <h2>Seleccione la dificultad:</h2>
+            <select name="selectDificultad" id="selectDificultad">
+                <option value="3">Dificil</option>
+                <option value="5">Media</option>
+                <option value="10" selected>Facil</option>
+            </select>
+        </div>
+        <div id="divInput">
+            <h2>Ingrese su acierto:</h2>
+            <div>
+                <input type="number" id="inputNumeros" min="1" max="100">
+                <button id="#submitButton">Enviar</button>
+            </div>
+            
+        </div>
+        
+        <section id="sectionIntentos">
 
-    <h1>Adivina el Número!</h1>
-    <div id="divDificultadJuego">
-        <h2>Seleccione la dificultad:</h2>
-        <select name="selectDificultad" id="selectDificultad">
-            <option value="3">3</option>
-            <option value="5">5</option>
-            <option value="10" selected>10</option>
-        </select>
-    </div>
-    <div id="divInput">
-        <h2>Ingrese su acierto:</h2>
-        <input type="number" id="inputNumeros" min="1" max="100">
-    </div>
+        </section>
 
-    <!-- <form action="" id="formularioNumeros"> -->
-    
-        <!-- <button id="botonNumeros">Comprobar</button> -->
-    <!-- </form> -->
-
-    <!-- <div>(panel numerico para poder ingresar los numeros)</div> -->
-    <section id="sectionIntentos">
-
-    </section>
-
-    <button id="buttonNewGame">Nuevo Juego</button>
+        <button id="buttonNewGame">Nuevo Juego</button>
+        
+    </main>
 
     <footer>
         <div>
@@ -63,9 +63,6 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/game.js"></script>
 </body>
-
-
-
-</html>

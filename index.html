@@ -9,77 +9,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
-
 </head>
 
 
 <body>
 
     <header>
-        <div>
-            <a><button>Inicio</button></a>
-            <a href="pages/game.html"><button>Jugar</button></a>
-            <a href="pages/historial.html"><button>Historial</button></a>
-        </div>
-        <div>
-            <button>Sobre Nosotros</button>
-        </div>
+        <nav>
+            <div>
+                <button>Inicio</button>
+                <a href="pages/game.html"><button>Jugar</button></a>
+                <a href="pages/historial.html"><button>Historial</button></a>
+            </div>
+            <div>
+                <button>Sobre Nosotros</button>
+            </div>
+        </nav>
     </header>
-    
-    <h1>Bienvenido a Adivina el Numero!</h1>
-    
-    <section id="sectionReglas">
-        <h2>Reglas</h2>
-        <p>
-            El objetivo del juego es adivinar el numero elegido aleatoriamente por el sistema. Tras ingresar un numero se mostrara:
-        </p>
-        <div>
-            <img src="images/flechaArriba.png" alt="">
-            <p>Si el numero que ingresaste es menor</p>
-        </div>
-        <div>
-            <img src="images/flechaAbajo.png" alt="">
-            <p>Si el numero que ingresaste es mayor</p>
-        </div>
-        <div>
-            <img src="images/trofeo.png" alt="">
-            <p>Si adivinaste el numero</p>
-        </div>
-    </section>
-    
 
-    <h2>Ejemplo</h2>
-    <section id="sectionEjemplo">
-        <div class="divIntento">
-            <h3>Intento número 1:</h3>
+    <main>
+            <h1>Bienvenido a Adivina el Numero!</h1>
+        
+        <section id="sectionReglas">
+            <h2>Reglas</h2>
+            <p>
+                El objetivo del juego es adivinar el numero elegido aleatoriamente por el sistema entre 1 y 100. Tras ingresar un numero se mostrara:
+            </p>
             <div>
-                <p>20</p>
-                <img src="images/flechaAbajo.png" class="imgIntento">
+                <img src="../images/flechaArriba.png" alt="">
+                <p>Si el numero que ingresaste es menor</p>
             </div>
-        </div>
-        <div class="divIntento">
-            <h3>Intento número 2:</h3>
             <div>
-                <p>15</p>
-                <img src="images/flechaArriba.png" class="imgIntento">
+                <img src="../images/flechaAbajo.png" alt="">
+                <p>Si el numero que ingresaste es mayor</p>
             </div>
-        </div>
-        <div class="divIntento">
-            <h3>Intento número 3:</h3>
             <div>
-                <p>18</p>
-                <img src="images/flechaArriba.png" class="imgIntento">
+                <img src="../images/trofeo.png" alt="">
+                <p>Si adivinaste el numero</p>
             </div>
-        </div>
-        <div class="divIntento">
-            <h3>Intento número 4:</h3>
-            <div>
-                <p>19</p>
-                <img src="images/trofeo.png" class="imgIntento">
+        </section>
+        
+        
+        <h2>Ejemplo</h2>
+        <section id="sectionEjemplo">
+            <div class="divIntento">
+                <h3>Intento número 1:</h3>
+                <div>
+                    <p>20</p>
+                    <img src="../images/flechaAbajo.png" class="imgIntento">
+                </div>
             </div>
-        </div>
-    </section>
-    
+            <div class="divIntento">
+                <h3>Intento número 2:</h3>
+                <div>
+                    <p>15</p>
+                    <img src="../images/flechaArriba.png" class="imgIntento">
+                </div>
+            </div>
+            <div class="divIntento">
+                <h3>Intento número 3:</h3>
+                <div>
+                    <p>18</p>
+                    <img src="../images/flechaArriba.png" class="imgIntento">
+                </div>
+            </div>
+            <div class="divIntento">
+                <h3>Intento número 4:</h3>
+                <div>
+                    <p>19</p>
+                    <img src="../images/trofeo.png" class="imgIntento">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div>
@@ -91,7 +93,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 
 
