@@ -9,48 +9,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
     <header>
         <nav>
-            <div>
+            <section>
+                <div>
                 <a href="../index.html"><button>Inicio</button></a>
                 <a href="game.html"><button>Jugar</button></a>
                 <button>Historial</button>
-            </div>
-            <div>
-                <button>Sobre Nosotros</button>
-            </div>
+                </div>
+                <div>
+                    <a href="aboutUs.html"><button>Sobre Mi</button></a>
+                </div>
+            </section>
+                
         </nav>
     </header>
-
-    <h1>Historial de Partidas</h1>
-    <div id="divFiltro">
-        <h2>Filtrar</h2>
-        <div>
-            <p>Dificultad</p>
-            <select name="selectFiltroDificultad" id="selectFiltroDificultad">
-                <option value="3">Dificil</option>
-                <option value="5">Medio</option>
-                <option value="10">Facil</option>
-                <option value="todos" selected>Todos</option>
-            </select>
+    <main>
+        <h1>Historial de Partidas</h1>
+        <div id="divFiltro">
+            <h2>Filtrar</h2>
+            <div>
+                <p>Dificultad</p>
+                <select name="selectFiltroDificultad" id="selectFiltroDificultad">
+                    <option value="3">Dificil</option>
+                    <option value="5">Medio</option>
+                    <option value="10">Facil</option>
+                    <option value="todos" selected>Todos</option>
+                </select>
+            </div>
+            <div>
+                <p>Resultado</p>
+                <select name="selectFiltroResultado" id="selectFiltroResultado">
+                    <option value="ganado">Ganado</option>
+                    <option value="perdido">Perdido</option>
+                    <option value="todos" selected>Todos</option>
+                </select>
+            </div>
         </div>
-        <div>
-            <p>Resultado</p>
-            <select name="selectFiltroResultado" id="selectFiltroResultado">
-                <option value="ganado">Ganado</option>
-                <option value="perdido">Perdido</option>
-                <option value="todos" selected>Todos</option>
-            </select>
-        </div>
-    </div>
-    <section id="sectionHistorial">
+        <section id="sectionHistorial">
 
-    </section>
+        </section>
+    </main>
+    
 
     <footer>
         <div>
@@ -61,7 +65,7 @@
             <a><img src="../images/iconEmail.png" alt=""></a>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/filter.js"></script>
     

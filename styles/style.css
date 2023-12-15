@@ -10,6 +10,7 @@ html{
 
 body{
     height: 100%;
+    background-color: rgb(232, 244, 255) !important;
 }
 
 header{
@@ -21,7 +22,7 @@ header{
     background-color: rgb(232, 244, 255);
 }
 
-nav{
+nav section{
     display: flex;
     justify-content: space-between;
     align-items: space-between;
@@ -183,4 +184,77 @@ input{
 #helpButton{
     width: 50px;
     height: 50px;
+}
+
+#fotoAU{
+    width: 50%;
+}
+
+#informacionPersonal{
+    display: flex;
+}
+#informacionPersonal div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#proyectos{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#informacionContacto{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#informacionContacto b {
+    align-self: center;
+}
+#informacionContacto div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe{
+    width: 560px;
+    height: 315px;
+    margin: 20px;
+}
+@media (max-width:600px){
+    html{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    main{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    header{
+        border-bottom: 3px solid rgba(164, 203, 240, 0.603);
+    }
+
+    footer{
+        border-top: 3px solid rgba(164, 203, 240, 0.603);
+    }
+
+    #informacionPersonal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #informacionPersonal div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #informacionPersonal div p{
+        text-align: center;
+    }
+
+    iframe{
+        width: 100%;
+    }
 }
